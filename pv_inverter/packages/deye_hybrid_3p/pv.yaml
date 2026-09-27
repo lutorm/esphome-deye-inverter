@@ -202,7 +202,7 @@ sensor:
     state_class: "total_increasing"
     accuracy_decimals: 1
     filters:
-      - multiply: 0.1
+      - multiply: 1.0
     value_type: U_WORD
     icon: "mdi:solar-power"
 
@@ -218,7 +218,7 @@ sensor:
     accuracy_decimals: 1
     value_type: U_DWORD_R
     filters:
-      - multiply: 0.1
+      - multiply: 1.0
     icon: "mdi:solar-power"
 
 switch:
