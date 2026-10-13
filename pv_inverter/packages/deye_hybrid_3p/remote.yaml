@@ -1,7 +1,7 @@
 select:
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${fast_modbus_controller_id}
+    modbus_controller_id: ${modbus_controller_id}
     id: remote_mode
     name: "Remote mode"
     address: 1100
@@ -14,7 +14,7 @@ select:
 
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${fast_modbus_controller_id}
+    modbus_controller_id: ${modbus_controller_id}
     id: inverter_output_power_control_mode
     name: "Inverter output power control mode"
     address: 1104
@@ -26,7 +26,7 @@ select:
 
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${fast_modbus_controller_id}
+    modbus_controller_id: ${modbus_controller_id}
     id: battery_side_control
     name: "Battery side control"
     address: 1105
@@ -39,7 +39,7 @@ select:
 
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${fast_modbus_controller_id}
+    modbus_controller_id: ${modbus_controller_id}
     id: ac_power_control_mode
     name: "AC power control mode"
     address: 1106
@@ -61,7 +61,7 @@ number:
 
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${fast_modbus_controller_id}
+    modbus_controller_id: ${modbus_controller_id}
     id: battery_constant_voltage_mode
     name: "Battery constant voltage mode"
     min_value: 0
@@ -74,7 +74,7 @@ number:
 
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${fast_modbus_controller_id}
+    modbus_controller_id: ${modbus_controller_id}
     id: battery_constant_current_mode
     name: "Battery constant current mode"
     min_value: 0
@@ -87,7 +87,7 @@ number:
 
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${fast_modbus_controller_id}
+    modbus_controller_id: ${modbus_controller_id}
     id: battery_constant_power_mode
     name: "Battery constant power mode"
     min_value: -120
@@ -100,7 +100,7 @@ number:
 
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${fast_modbus_controller_id}
+    modbus_controller_id: ${modbus_controller_id}
     id: battery_constant_soc_mode
     name: "Battery constant SOC mode"
     min_value: 0
@@ -113,7 +113,7 @@ number:
 
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${fast_modbus_controller_id}
+    modbus_controller_id: ${modbus_controller_id}
     id: inv_output_power_ABC
     name: "Inverter output power phase ABC"
     min_value: -120
@@ -126,7 +126,7 @@ number:
 
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${fast_modbus_controller_id}
+    modbus_controller_id: ${modbus_controller_id}
     id: inv_output_power_A
     name: "Inverter output power phase A"
     min_value: -120
@@ -139,7 +139,7 @@ number:
 
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${fast_modbus_controller_id}
+    modbus_controller_id: ${modbus_controller_id}
     id: inv_output_power_B
     name: "Inverter output power phase B"
     min_value: -120
@@ -152,7 +152,7 @@ number:
 
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${fast_modbus_controller_id}
+    modbus_controller_id: ${modbus_controller_id}
     id: inv_output_power_C
     name: "Inverter output power phase C"
     min_value: -120
@@ -165,7 +165,7 @@ number:
 
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${fast_modbus_controller_id}
+    modbus_controller_id: ${modbus_controller_id}
     id: remote_mode_max_solar_power
     name: "Remote Mode max solar power"
     min_value: 0
