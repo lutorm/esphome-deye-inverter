@@ -13,7 +13,8 @@
 # limitations under the License.
 
 substitutions:
-  update_interval: 5s
+  update_interval: 60s
+  fast_update_interval: 5s
 
 esphome:
   name: "${name}"
@@ -68,7 +69,7 @@ uart:
 modbus:
   id: modbus_1
   uart_id: modbus_uart
-  turnaround_time: 70ms
+  turnaround_time: ${modbus_turnaround_time}
 
 modbus_controller:
   - id: ${modbus_controller_id}
@@ -76,4 +77,10 @@ modbus_controller:
     modbus_id: modbus_1
     setup_priority: -100
     update_interval: ${update_interval}
+    offline_skip_updates: 3
+  - id: ${fast_modbus_controller_id}
+    address: ${modbus_inverter_address}
+    modbus_id: modbus_1
+    setup_priority: -100
+    update_interval: ${fast_update_interval}
     offline_skip_updates: 3
