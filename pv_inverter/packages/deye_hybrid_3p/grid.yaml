@@ -328,7 +328,7 @@ sensor:
     icon: "mdi:transmission-tower"
 
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: ${fast_modbus_controller_id}
     name: "External CT L1 Current"
     id: external_ct_l1_current
     register_type: holding
@@ -342,7 +342,7 @@ sensor:
     icon: "mdi:transmission-tower"
 
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: ${fast_modbus_controller_id}
     name: "External CT L2 Current"
     id: external_ct_l2_current
     register_type: holding
@@ -356,7 +356,7 @@ sensor:
     icon: "mdi:transmission-tower"
 
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: ${fast_modbus_controller_id}
     name: "External CT L3 Current"
     id: external_ct_l3_current
     register_type: holding
